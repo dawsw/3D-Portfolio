@@ -252,7 +252,7 @@ scene.add(lampLight, roomLight)
 /////////// BEDROOM MODEL //////////////
 let bedroomModel;
 gltfLoader.load(
-  '/models/bedroom/bedroom.glb',
+  './models/bedroom/bedroom.glb',
 
   function (gltf) {
     bedroomModel = gltf.scene;
@@ -269,7 +269,7 @@ const gameboyScreenHTML = document.getElementById('gameboyScreen');
 const gameboyScreenObject = new CSS3DObject(gameboyScreenHTML);
 
 gltfLoader.load(
-  '/models/gameboy/gameboy.glb',
+  './models/gameboy/gameboy.glb',
   function (gltf) {
     gameboyModel = gltf.scene;
     gameboyModel.rotation.x += -1.5;
@@ -925,10 +925,10 @@ linkButton.addEventListener('click', function() {
 
 soundButton.addEventListener('click', function () {
   if (soundPlaying == false) {
-    soundButton.src = '/static/soundOn.svg'
+    soundButton.src = './static/soundOn.svg'
     soundPlaying = true;
   } else {
-    soundButton.src = '/static/soundOff.svg'
+    soundButton.src = './static/soundOff.svg'
     soundPlaying = false;
   }
 });
