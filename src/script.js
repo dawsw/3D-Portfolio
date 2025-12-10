@@ -925,10 +925,10 @@ linkButton.addEventListener('click', function() {
 
 soundButton.addEventListener('click', function () {
   if (soundPlaying == false) {
-    soundButton.src = '/static/soundOn.svg'
+    soundButton.src = './static/soundOn.svg'
     soundPlaying = true;
   } else {
-    soundButton.src = '/static/soundOff.svg'
+    soundButton.src = './static/soundOff.svg'
     soundPlaying = false;
   }
 });
