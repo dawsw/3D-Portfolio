@@ -920,7 +920,7 @@ controlsButton.addEventListener('click', function() {
 });
 
 linkButton.addEventListener('click', function() {
-  window.location.href = "https://dawsonweilage.com/portfolio";
+  window.location.href = "https://dawsonweilage.com";
 });
 
 soundButton.addEventListener('click', function () {
